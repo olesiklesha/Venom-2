@@ -9,6 +9,7 @@ body {
   background-image: url(../assets/bg-image.png);
   background-size: cover;
   color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
 }
 
 .wrapper-outher {
@@ -16,7 +17,7 @@ body {
 }
 
 .wrapper-inner {
- max-width: 1146px;
+  max-width: 1146px;
   margin: 0 auto;
   padding-bottom: 80px;
 }
