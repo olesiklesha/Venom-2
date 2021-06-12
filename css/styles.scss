@@ -1,4 +1,185 @@
+// ==== COMMON =====
+
 html {
   font-family: 'Roboto', sans-serif;
 }
+
+body {
+  background-color: #14131A;
+  background-image: url(../assets/bg-image.png);
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.wrapper-outher {
+  padding: 0 110px;
+}
+
+.wrapper-inner {
+ max-width: 1146px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+h1 {
+  font-size: 1px;
+  color: #000;
+  position: absolute;
+  left: -9999px;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.8);
+}
+// ==== / COMMON =====
+// ====  HEADER =====
+.section-header {
+  .wrapper-inner {
+    padding-top: 40px;
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.main-nav {
+  margin-left: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    & + & {
+      margin-left: 30px;
+    }
+    
+    &__link {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+
+      &:hover {
+        color: #ccc
+      }
+
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// ==== / HEADER =====
+
+// ====  MAIN =====
+.section-main {
+  position: relative;
+  .wrapper-inner {
+    overflow-x: hidden;
+  }
+  .text {
+    max-width: 420px;
+    padding-bottom: 70px;
+  }
+}
+
+.date {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.name {
+  padding-bottom: 40px;
+}
+
+.actions {
+  max-width: 415px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn--play {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #8D0019;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background: rgb(221, 197, 197);
+  }
+  
+  &:active {
+    background: rgb(224, 181, 181);
+
+  }
+}
+
+.btn--buy {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  padding: 0;
+  background: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.blood {
+  position: absolute;
+  top: -19%;
+  left: 43.5%;
+  z-index: -1;
+}
+
+.venom {
+  position: absolute;
+  // top: 12px;
+  // transform: rotate(-6.18deg);
+  // right: -1%;
+  width: 626px;
+  height: 724px;
+  right: -4%;
+  top: 12px;
+  transform: matrix(-0.99, 0.11, 0.11, 0.99, 0, 0);
+}
+// ==== / MAIN =====
+
 
